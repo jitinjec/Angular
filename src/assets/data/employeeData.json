@@ -1,0 +1,27 @@
+ [
+    {
+        "Id": "1",
+        "Name": "Jitin",
+        "department": "HR"
+    },
+    {
+        "Id": "2",
+        "Name": "John",
+        "department": "Admin"
+    },
+    {
+        "Id": "3",
+        "Name": "Deo",
+        "department": "Tech"
+    },
+    {
+        "Id": "4",
+        "Name": "Kumar",
+        "department": "Tech"
+    },
+    {
+        "Id": "5",
+        "Name": "Amit",
+        "department": "Admin"
+    }
+]

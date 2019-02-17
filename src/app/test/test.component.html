@@ -1,0 +1,27 @@
+
+ <p>{{parentData}} </p>
+
+ <button (click)="emitData()">send Event</button>
+
+ <h3> {{ name | lowercase }}</h3>
+ <h3> {{ name | uppercase }}</h3>
+ <h3> {{ message | titlecase }}</h3>
+
+ <h3> {{ person | json }}</h3>
+
+ <h3> {{ 5.678 | number:'1.2-3' }}</h3>
+ <h3> {{ 5.678 | number:'3.4-5' }}</h3>
+ <h3> {{ 5.678 | number:'5.1-2' }}</h3>
+
+ <h3> {{ 0.25 | percent }}</h3>
+ <h3> {{ 0.25 | percent }}</h3>
+ <h3> {{ 0.25 | currency }}</h3>
+ <h3> {{ 0.25 | currency :'EUR' :'code' }}</h3>
+
+ <h4> {{ date }}</h4>
+ <h4> {{ date | date:'short' }}</h4>
+ <h4> {{ date  |  date:'shortDate' }}</h4>
+ <h4> {{ date  |  date:'shortTime' }}</h4>
+
+
+

@@ -1,0 +1,89 @@
+<div class="container">
+    <h2 class="text-center">
+        {{title}}
+    </h2>
+    <!-- <div style="width:50%">
+    <div class="form-group">
+        <input type="text" name="id" id="empId" [(ngModel)]="empId" class="form-control" >
+    </div>
+    <div class="form-group">
+        <input type="text" name="name" id="name" [(ngModel)]="name" class="form-control" >
+    </div>
+    <div class="form-group">
+            <select name="department" id="department" class="form-control" (change)="ChangingValue($event)" >
+                    <option value="HR"> HR</option>
+                    <option value="Tech"> Tech</option>
+                    <option value="Admin"> Admin</option>
+         </select>
+    </div>
+    <div class="form-group">
+        <input type="button" value="Add Employee" (click)="AddEmployee()">
+    </div>
+</div>
+<div class="form-group">
+    <h4> Employee List</h4>
+    <li *ngFor="let employee of employeeList">
+        {{employee.Name}}
+    </li>
+</div>
+    <div class="form-group">
+        <h4> Employee Details</h4>
+        <div class="row" *ngFor="let employee of employeeList">
+            <div class="col-md-2">
+                {{employee.Id}}
+            </div>
+            <div class="col-md-2">
+                {{employee.Name}}
+            </div>
+            <div class="col-md-2">
+                {{employee.department}}
+            </div>
+        </div>
+    </div>
+</div> -->
+
+
+    <!-- Component Interactions -->
+    <!-- <div style="width:50%">
+    <app-add-new-employee (onEmployeeAdded)="AddEmployee($event)"></app-add-new-employee>
+</div>
+    <app-employee-list [employeeList]="employeeList"></app-employee-list>
+    <app-employee-details [employeeList]="employeeList"></app-employee-details>
+</div> -->
+
+    <!-- Using Data Service -->
+    <!-- <div style="width:50%">
+        <app-add-new-employee></app-add-new-employee>
+    </div>
+    <app-employee-list></app-employee-list>
+    <app-employee-details></app-employee-details> -->
+
+
+    <!-- Routing -->
+    <nav class="navbar navbar-expand-sm bg-light navbar-light">
+
+        <!-- Links -->
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/employeeList" routerLinkActive="active">Employee List</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/employeeDetails" routerLinkActive="active">Employee Details</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/add" routerLinkActive="active">Add New Employee</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/login" routerLinkActive="active">Login</a>
+            </li>
+        </ul>
+
+    </nav>
+
+    <div class="pad-10">
+        <router-outlet></router-outlet>
+    </div>
+
+
+</div>
